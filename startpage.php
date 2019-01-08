@@ -20,6 +20,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
+include __DIR__ . '/class-startpage-templates.php';
 include __DIR__ . '/class-startpage.php';
 
 add_action( 'plugins_loaded', array( 'Startpage', 'init' ) );

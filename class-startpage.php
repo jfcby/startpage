@@ -18,6 +18,13 @@
 class Startpage {
 
 	/**
+	 * A reference to the Startpage_Templates object.
+	 *
+	 * @var Startpage_Templates
+	 */
+	public $templates;
+
+	/**
 	 * Initialize the plugin
 	 */
 	public static function init() {
@@ -42,6 +49,7 @@ class Startpage {
 	 * Constructor
 	 */
 	public function __construct() {
+		$this->templates = new Startpage_Templates( $this );
 		$this->register_hooks();
 	}
 

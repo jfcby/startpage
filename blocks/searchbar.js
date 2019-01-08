@@ -10,14 +10,14 @@ registerBlockType( 'startpage/search-engine-form', {
 
 	edit( { className } ) {
 		return <form className={ className } action="https://duckduckgo.com/">
-		<input name="q" style={{width: '80%'}} placeholder="Duckduckgo..." />
-		<button>Search</button>
+		<input name="q" style={{width: '80%'}} autocomplete="off" placeholder="Duckduckgo..." />
+		<button disabled="disabled">Search</button>
 		</form>;
 	},
 
 	save() {
 		return <form action="https://duckduckgo.com/">
-		<input name="q" style={{width: '80%'}} placeholder="Duckduckgo..."  />
+		<input name="q" style={{width: '80%'}} autocomplete="off" autofocus placeholder="Duckduckgo..."  />
 		<button>Search</button>
 		</form>;
 	},
