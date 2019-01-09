@@ -27,8 +27,8 @@ class Startpage_Templates {
 	 * Contains the available templates
 	 */
 	private $templates = array(
-		'minimalist.php' => 'Minimalist Startpage',
-		'bliphome.php'   => 'Bliphome Startpage',
+		'minimalist' => 'Minimalist Startpage',
+		'bliphome'   => 'Bliphome Startpage',
 	);
 
 	/**
@@ -77,7 +77,7 @@ class Startpage_Templates {
 		if ( $post_id ) {
 			$page_template = get_post_meta( $post_id, '_wp_page_template', true );
 			if ( isset( $this->templates[ $page_template ] ) ) {
-				return plugin_dir_path( __FILE__ ) . '/templates/' . $page_template;
+				return plugin_dir_path( __FILE__ ) . '/templates/' . $page_template . '/index.php';
 			}
 		}
 		return $template;
