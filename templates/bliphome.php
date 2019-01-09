@@ -16,61 +16,81 @@
 	<title>New tab</title>
 	<style type="text/css">
 		body {
-		  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-		  font-size: 81.25%; /* should match system size */
-		  margin: 0;
-		  background: rgb(241, 243, 244);
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 81.25%; /* should match system size */
+			margin: 0;
+			background: rgb(241, 243, 244);
+		}
+
+		a, a:visited {
+			color: rgb(51, 103, 214);
 		}
 
 		#root {
-		  display: flex;
-		  flex-direction: row;
-		  min-height: 100vh;
+			display: flex;
+			flex-direction: row;
+			min-height: 100vh;
 		}
 
 		.shelf {
-		  flex: 1 1 auto;
-		  display: flex;
-		  justify-content: center;
-		  align-content: center;
-		  align-items: center;
-		  text-align: center;
+			flex: 1 1 auto;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			text-align: center;
 		}
 
 		input, button {
-		  /* Material Design Component Button */
-		  -webkit-appearance: none;
-		  height: 36px;
-		  padding: 0 16px;
-		  border-radius: 4px;
-		  font-size: 13px;
-		  font-weight: 500;
-		  text-transform: uppercase;
-		  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-		  cursor: pointer;
-		  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-		  margin: 1em;
+			/* Material Design Component Button */
+			-webkit-appearance: none;
+			height: 36px;
+			padding: 0 16px;
+			border-radius: 4px;
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: uppercase;
+			box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+			cursor: pointer;
+			transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+			margin: 1em;
 		}
 
 		button {
-		  border: 0;
-		  background-color: rgb(51, 103, 214);
-		  color: rgb(255, 255, 255);
+			border: 0;
+			background-color: rgb(51, 103, 214);
+			color: rgb(255, 255, 255);
 		}
 
 		input {
-		  border: 2px;
-		  border-color: rgb(51, 103, 214);
-		  background-color: rgb(255, 255, 255);
-		  color: rgb(0, 0, 0);
+			border: 2px;
+			border-color: rgb(51, 103, 214);
+			background-color: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
 		}
 
 		button:hover {
-		  background-color: rgb(66, 133, 244);
-		  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
+			background-color: rgb(66, 133, 244);
+			box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
 		}
 		input:hover {
-		  box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
+			box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
+		}
+		.wp-block-startpage-search-engine-form {
+			white-space: nowrap;
+		}
+		input.searchquery {
+			width: 80%;
+		}
+
+		ul, li {
+			list-style-type: none;
+			text-align: left;
+			padding-left: 0;
+		}
+		ul {
+			margin-top: .5em;
+			margin-bottom: 1.5em;
 		}
 	</style>
 </head>
