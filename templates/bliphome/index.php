@@ -14,7 +14,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>New tab</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo esc_url( plugins_url( 'index.css', __FILE__ ) ); ?>">
+	<?php wp_head(); ?>
 </head>
 <body>
 
