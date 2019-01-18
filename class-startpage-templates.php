@@ -77,7 +77,6 @@ class Startpage_Templates {
 		if ( $post_id ) {
 			$page_template = get_post_meta( $post_id, '_wp_page_template', true );
 			if ( isset( $this->templates[ $page_template ] ) ) {
-				wp_enqueue_style( $page_template, plugins_url( 'templates/' . $page_template . '/index.css', __FILE__ ) );
 				return plugin_dir_path( __FILE__ ) . '/templates/' . $page_template . '/index.php';
 			}
 		}

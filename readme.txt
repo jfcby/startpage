@@ -16,7 +16,9 @@ With this plugin you can create your own browser start page. This means you can 
 == Installation ==
 
 1. Upload the `startpage` directory to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Create a new page that you want to use as startpage and use the included blocks like `Searchbar` to build the page.
+4. You can change that site's theme in the editor under "Page Templates" to "Minimalistic" or "Bliphome."
 
 == Frequently Asked Questions ==
 
